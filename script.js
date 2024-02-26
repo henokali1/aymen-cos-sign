@@ -50,7 +50,7 @@ window.onload = function() {
     function updateTrigValues(angle) {
         var cosValue = Math.cos(angle).toFixed(2);
         var sinValue = Math.sin(angle).toFixed(2);
-        trigValuesDisplay.innerHTML = 'cos' + `(${(angle * 180 / Math.PI).toFixed(1)}°) = ` + cosValue + '<br>' + 'sin: ' + `(${(angle * 180 / Math.PI).toFixed(1)}°) = ` + sinValue;
+        trigValuesDisplay.innerHTML = 'cos' + `(${(angle * 180 / Math.PI).toFixed(1)}°) = ` + cosValue + '<br>' + 'sin' + `(${(angle * 180 / Math.PI).toFixed(1)}°) = ` + sinValue;
     }
 
     // Mouse down event listener
