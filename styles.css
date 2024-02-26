@@ -1,0 +1,75 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative; /* Ensure the body acts as a relative positioning context */
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid black;
+    position: relative;
+}
+
+.point {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+#angle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#trigValues {
+    position: absolute;
+    top: 40px;
+    right: 10px;
+}
+
+.axis {
+    position: absolute;
+    background-color: black;
+}
+
+#xAxis {
+    width: 200px; /* Adjust the length of the x-axis */
+    height: 2px;
+    top: calc(50% - 1px); /* Position it at the center */
+    left: calc(50% - 100px); /* Position it to the left */
+}
+
+#yAxis {
+    width: 2px;
+    height: 200px; /* Adjust the length of the y-axis */
+    top: calc(50% - 100px); /* Position it to the top */
+    left: calc(50% - 1px); /* Position it at the center */
+}
+
+.axis-label {
+    position: absolute;
+    font-size: 14px;
+    color: black;
+}
+
+#xAxisLabel {
+    top: calc(50% + 10px); /* Position it below the x-axis */
+    left: calc(50% - 10px); /* Position it at the center of the x-axis */
+}
+
+#yAxisLabel {
+    top: calc(50% - 10px); /* Position it at the center of the y-axis */
+    left: calc(50% + 10px); /* Position it to the right of the y-axis */
+}
