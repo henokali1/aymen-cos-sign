@@ -13,14 +13,17 @@
     #canvas {
         display: block;
         margin: auto;
-        background-color: #f0f0f0;
+        /* background-color: #f0f0f0; */
     }
     #info {
         position: absolute;
-        top: 10px;
-        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 10px;
         font-family: Arial, sans-serif;
-        font-size: 14px;
+        font-size: 28px;
+        border: 1px solid black; /* Add border */
+        padding: 10px; /* Add padding for better readability */
     }
 </style>
 </head>
@@ -83,7 +86,6 @@
         ctx.textAlign = 'center';
         // Calculate angle in degrees (between 0 and 360)
         let degrees = (-angle * 180 / Math.PI + 360) % 360;
-        // ctx.fillText(`Angle: ${degrees.toFixed(2)}°`, centerX, centerY - 60);
 
         // Draw draggable point
         ctx.beginPath();
